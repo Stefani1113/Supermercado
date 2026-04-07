@@ -9,7 +9,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/categorias")
@@ -44,9 +46,13 @@ public class CategoriaController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminar(@PathVariable Long id) {
+    public ResponseEntity<Map<String, String>> eliminar(@PathVariable Long id) {
         categoriaService.eliminar(id);
-        return ResponseEntity.noContent().build();
-    }
+
+    Map<String, String> respuesta = new HashMap<>();
+    respuesta.put("mensaje", "Categoría eliminada exitosamente");
+
+    return ResponseEntity.ok(respuesta);
+}
 }
 

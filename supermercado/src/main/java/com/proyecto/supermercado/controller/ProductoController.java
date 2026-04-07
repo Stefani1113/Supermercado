@@ -10,7 +10,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/productos")
@@ -46,8 +48,12 @@ public class ProductoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminar(@PathVariable Long id) {
+    public ResponseEntity<Map<String, String>> eliminar(@PathVariable Long id) {
         productoService.eliminar(id);
-        return ResponseEntity.noContent().build();
+
+        Map<String, String> respuesta = new HashMap<>();
+    respuesta.put("mensaje", "Producto eliminado exitosamente");
+
+    return ResponseEntity.ok(respuesta);
     }
 }
