@@ -1,15 +1,27 @@
 spring:
   application:
+<<<<<<< HEAD
     name: supermarket
   datasource:
     url: jdbc:mysql://localhost:3306/supermarket?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
     password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
+=======
+    name: supermercado
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/supermarket?useSSL=false&serverTimezone=UTC
+    username: root
+    password: aqui_tu_contraseña_de_mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+>>>>>>> d14a6be7e2bf2fc82b32222fa4228f0cd01f1417
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+<<<<<<< HEAD
     defer-datasource-initialization: true
     properties:
       hibernate:
@@ -17,3 +29,11 @@ spring:
   sql:
     init:
       mode: always
+=======
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8080
+>>>>>>> d14a6be7e2bf2fc82b32222fa4228f0cd01f1417
