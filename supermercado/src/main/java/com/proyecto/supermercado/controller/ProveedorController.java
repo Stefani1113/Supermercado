@@ -36,7 +36,7 @@ public class ProveedorController {
 
     @PutMapping("/{id}")
     public ResponseEntity<ProveedorResponseDTO> actualizar(@PathVariable Long id,
-                                               @Valid @RequestBody ProveedorRequestDTO dto) {
+        @Valid @RequestBody ProveedorRequestDTO dto) {
         return ResponseEntity.ok(proveedorService.actualizar(id, dto));
     }
 
