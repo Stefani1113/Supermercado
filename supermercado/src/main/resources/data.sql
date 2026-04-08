@@ -1,3 +1,15 @@
+INSERT IGNORE INTO empleados (cedula, nombre, cargo, fecha_ingreso, salario) VALUES
+('12345678', 'Ana Gómez', 'ADMINISTRADOR', '2023-01-10', 2500000.00),
+('87654321', 'Luis Pérez', 'CAJERO', '2024-02-15', 1200000.00),
+('11223344', 'Carlos Ruiz', 'AUXILIAR', '2024-03-01', 1000000.00),
+('99887766', 'María López', 'CAJERO', '2024-01-20', 1250000.00),
+('55443322', 'José Martínez', 'AUXILIAR', '2024-04-10', 1050000.00),
+('66778899', 'Laura Fernández', 'ADMINISTRADOR', '2023-11-15', 2600000.00),
+('44332211', 'Pedro Gómez', 'CAJERO', '2024-03-25', 1220000.00),
+('55667788', 'Sofia Reyes', 'AUXILIAR', '2024-04-01', 1080000.00);
+
+
+
 -- CATEGORÍAS
 INSERT IGNORE INTO categorias (id, nombre, descripcion) VALUES
 (1, 'Lácteos',       'Leche, quesos, yogures y derivados'),
