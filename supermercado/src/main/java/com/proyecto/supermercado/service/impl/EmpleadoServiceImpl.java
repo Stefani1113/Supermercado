@@ -1,10 +1,11 @@
 // service/EmpleadoServiceImpl.java
-package com.proyecto.supermercado.services;
+package com.proyecto.supermercado.service.impl;
 
 import com.proyecto.supermercado.dto.EmpleadoRequestDTO;
 import com.proyecto.supermercado.dto.EmpleadoResponseDTO;
 import com.proyecto.supermercado.entity.Empleado;
 import com.proyecto.supermercado.repository.EmpleadoRepository;
+import com.proyecto.supermercado.service.EmpleadoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

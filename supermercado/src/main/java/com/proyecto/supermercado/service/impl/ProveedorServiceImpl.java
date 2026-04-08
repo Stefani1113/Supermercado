@@ -81,7 +81,7 @@ public class ProveedorServiceImpl implements ProveedorService {
                 .orElseThrow(() -> new RuntimeException("Producto no encontrado con ID: " + dto.getProductoId()));
 
         producto.setStock(producto.getStock() + dto.getCantidad());
-        producto.getProveedor().add(proveedor);
+        producto.getProveedores().add(proveedor);
 
         EntradaAlmacen entrada = new EntradaAlmacen();
         entrada.setProducto(producto);
