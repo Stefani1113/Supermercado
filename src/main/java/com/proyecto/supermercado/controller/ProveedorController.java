@@ -1,5 +1,5 @@
 package com.proyecto.supermercado.controller;
-
+ 
 import com.proyecto.supermercado.dto.EntradaAlmacenRequestDTO;
 import com.proyecto.supermercado.dto.ProveedorRequestDTO;
 import com.proyecto.supermercado.dto.ProveedorResponseDTO;
