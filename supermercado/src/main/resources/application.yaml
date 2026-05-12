@@ -18,3 +18,12 @@ spring:
     init:
       mode: always
 
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1/
+
+security:
+  jwt:
+    secret-key: ImIq9nynVF/OwzGrdCn718/u/GtPauAxV1fjmoK06Ts=
+    token-expiration: 600000 
